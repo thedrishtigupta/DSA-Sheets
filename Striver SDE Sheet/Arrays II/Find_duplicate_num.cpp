@@ -46,5 +46,5 @@ int main() {
 }
 
 /*
-NOTE: If it only contains duplicate element twice, can solve it using sum also.
+NOTE: If it only contains duplicate element twice, can solve it using sum also. but this fails for case : 3 3 3 3 3
 */
