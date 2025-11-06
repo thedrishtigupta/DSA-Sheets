@@ -25,7 +25,7 @@ double myPow(double x, int n) {
     if(x == 0) return 0;
     if(n < 0) {x = 1/x; n = -n;}
 
-    int ans = 1;
+    double ans = 1;
 
     while(n > 0) {
         if(n % 2 == 1) ans *= x;
