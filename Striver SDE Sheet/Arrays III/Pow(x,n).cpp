@@ -23,14 +23,16 @@ using namespace std;
 double myPow(double x, int n) {
     if(n == 0 || x == 1) return 1;
     if(x == 0) return 0;
-    if(n < 0) {x = 1/x; n = -n;}
+
+    long bin = n;
+    if(n < 0) {x = 1/x; bin = -bin;}
 
     double ans = 1;
 
-    while(n > 0) {
-        if(n % 2 == 1) ans *= x;
+    while(bin > 0) {
+        if(bin % 2 == 1) ans *= x;
         x *= x;
-        n /= 2;
+        bin /= 2;
     }
     return ans;
 }
