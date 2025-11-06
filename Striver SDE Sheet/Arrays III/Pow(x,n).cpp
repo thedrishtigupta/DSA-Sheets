@@ -1,9 +1,11 @@
 
 /*
-Here, we use binary exponentiation. (a maths concept)
+Here, we use binary exponentiation. (a maths concept) -> O(log n)
 
 Suppose we have to find pow(3, 5).
 If we were to do it through multiplication or inbuilt function, it might give TLE.
+Since -2^31 <= n <= 2^31 -1. the T.C. will be O(n) >> 10^8 -> TLE
+
 We take x = 3, n = 5.
 So instead of looping of n, we loop on binary form of n (5 -> 101).
 Note: No. of digits in n = log(n) base 2 + 1
