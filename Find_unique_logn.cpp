@@ -39,7 +39,7 @@ int optimal(vector<int>& arr) {
 
         if((m % 2 == 0 && arr[m] == arr[m+1]) ||(m % 2 == 1 && arr[m] == arr[m-1]))
             s = m+1;
-        else e = m-1;
+        else e = m;
     }
     return arr[s];
 }
